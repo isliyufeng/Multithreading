@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.time.LocalDateTime;
+
 /**
  * @describe
  * @Author joyous
@@ -23,4 +25,8 @@ public class SysUser {
     private Integer age;
 
     private Integer sex;
+
+    private LocalDateTime createTime;
+
+    private LocalDateTime updateTime;
 }

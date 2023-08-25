@@ -26,4 +26,28 @@ public class MultithreadingController {
     public void multithreadingTransactionTest() {
         multithreadingService.multithreadingTransactionTest();
     }
+
+    @GetMapping("/create-thread-method-1")
+    @ApiOperation(value = "创建线程方法1 Thread")
+    public void createThreadMethod1() {
+        multithreadingService.createThreadMethod1();
+    }
+
+    @GetMapping("/create-thread-method-2")
+    @ApiOperation(value = "创建线程方法2 Runnable")
+    public void createThreadMethod2() {
+        multithreadingService.createThreadMethod2();
+    }
+
+    @GetMapping("/create-thread-method-3")
+    @ApiOperation(value = "创建线程方法3 Callable")
+    public void createThreadMethod3() {
+        multithreadingService.createThreadMethod3();
+    }
+
+    @GetMapping("/thread-pool-test")
+    @ApiOperation(value = "线程池的应用")
+    public void threadPoolTest() {
+        multithreadingService.threadPoolTest();
+    }
 }
