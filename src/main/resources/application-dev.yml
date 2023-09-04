@@ -10,3 +10,11 @@ mybatis-plus:
   configuration:
     # SQL打印
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 线程池配置
+threadpool:
+  task:
+    corePoolSize: 2
+    maxPoolSize: 2
+    queueCapacity: 1000
+    keepAliveTime: 60
